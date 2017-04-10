@@ -1,0 +1,27 @@
+<%= form_for(plantum) do |f| %>
+  <% if plantum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(plantum.errors.count, "error") %> prohibited this plantum from being saved:</h2>
+
+      <ul>
+      <% plantum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %>
+    <%= f.text_field :nombre %>
+  </div>
+
+  <div class="field">
+    <%= f.label :huerta_id %>
+    <%= f.number_field :huerta_id %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

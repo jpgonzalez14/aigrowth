@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @huertum.name %>
+</p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @huertum.type %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @huertum.user_id %>
+</p>
+
+<%= link_to 'Edit', edit_huertum_path(@huertum) %> |
+<%= link_to 'Back', huerta_path %>

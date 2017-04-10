@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @plantum.nombre %>
+</p>
+
+<p>
+  <strong>Huerta:</strong>
+  <%= @plantum.huerta_id %>
+</p>
+
+<%= link_to 'Edit', edit_plantum_path(@plantum) %> |
+<%= link_to 'Back', planta_path %>

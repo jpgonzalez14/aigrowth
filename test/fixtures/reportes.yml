@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  tipo: MyString
+  datos: 1
+  planta_id: 1
+  microcontrolador_id: 1
+
+two:
+  tipo: MyString
+  datos: 1
+  planta_id: 1
+  microcontrolador_id: 1

@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Huerta</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @huerta.each do |huertum| %>
+      <tr>
+        <td><%= huertum.name %></td>
+        <td><%= huertum.type %></td>
+        <td><%= huertum.user_id %></td>
+        <td><%= link_to 'Show', huertum %></td>
+        <td><%= link_to 'Edit', edit_huertum_path(huertum) %></td>
+        <td><%= link_to 'Destroy', huertum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Huertum', new_huertum_path %>
