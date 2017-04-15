@@ -7,6 +7,8 @@ end
 
 gem "font-awesome-rails"
 gem 'rails',          '5.0.1'
+gem 'bcrypt',         '3.1.11'
+gem 'rails',          '5.0.1'
 gem 'bootstrap-sass', '3.3.6'
 gem 'puma',         '3.4.0'
 gem 'sass-rails',   '5.0.6'
